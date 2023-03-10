@@ -34,8 +34,6 @@ private final TelemetryClient telemetryClient;
                     + "BEP Test.................... -5\r\n"
                     + "Local Rtrn Count............ 00\r\n"
                     + "Remote Rtrn Count........... 00");
-
-            return ;
         }
 
         // here should go the real Send operation (not needed for this exercise)

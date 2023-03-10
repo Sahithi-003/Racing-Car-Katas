@@ -32,7 +32,7 @@ public class TelemetryDiagnosticControls
         telemetryConnection.disconnect();
 
         int retryLeft = 3;
-        while (status.getOnlineStatus() == false && retryLeft > 0)
+        while (!status.getOnlineStatus() && retryLeft > 0)
         {
             telemetryConnection.connect(DiagnosticChannelConnectionString);
             retryLeft -= 1;
